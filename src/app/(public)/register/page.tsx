@@ -44,6 +44,7 @@ export default function _Register() {
     if (!response.ok) {
       setError(data.error);
     } else {
+      console.log(data.message, data.user)
       router.push('/');
     }
   };

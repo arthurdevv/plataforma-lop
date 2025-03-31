@@ -1,6 +1,6 @@
 'use client';
 
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import Link from 'next/link';
 
 import { Conic } from '@/styles/global';
@@ -40,8 +40,21 @@ export default function Login() {
 
     const data = await response.json();
 
-    if (!response.ok) setError(data.error);
+    if (!response.ok) {
+      setError(data.error);
+    } else {
+      console.log(data.message, data.user);
+    }
   };
+
+  useEffect(() => {
+    fetch('/api/users')
+      .then((res) => res.json())
+      .then((data) => {
+        console.log('Usuários cadastrados:', data);
+      })
+      .catch((error) => console.error('Erro ao buscar usuários:', error));
+  }, []);
 
   return (
     <>

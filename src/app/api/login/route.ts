@@ -29,7 +29,7 @@ export async function POST(req: NextRequest) {
     }
 
     return NextResponse.json(
-      { message: 'login_successful', user: { name, email } },
+      { message: 'Usuário logado.', user: { name, email } },
       { status: 200 }
     );
   } catch (error) {

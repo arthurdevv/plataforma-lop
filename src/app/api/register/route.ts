@@ -28,7 +28,10 @@ export async function POST(req: NextRequest) {
     );
 
     return NextResponse.json(
-      { message: 'user_registered', id: result.rows[0].id },
+      {
+        message: 'Usuário cadastrado com sucesso!',
+        user: { id: result.rows[0].id, name, email, password },
+      },
       { status: 200 }
     );
   } catch (error) {
