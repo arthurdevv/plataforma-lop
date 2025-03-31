@@ -1,4 +1,4 @@
-'use client'
+'use client';
 
 import { Page, Content } from '@/styles/global';
 

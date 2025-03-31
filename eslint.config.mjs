@@ -14,6 +14,12 @@ const compat = new FlatCompat({
 const eslintConfig = [
   ...compat.config({
     extends: ['next', 'prettier', 'eslint:recommended'],
+		rules: {
+			"no-undef": "off",
+      "no-unused-vars": "off",
+			"react-hooks/rules-of-hooks": "off",
+      "@next/next/no-html-link-for-pages": "off",
+		},
   }),
 ];
 

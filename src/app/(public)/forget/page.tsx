@@ -13,7 +13,7 @@ import {
   Input,
 } from './styles';
 
-const Forget: React.FC = () => {
+export default function Forget() {
   return (
     <>
       <Wrapper>
@@ -44,5 +44,3 @@ const Forget: React.FC = () => {
     </>
   );
 }
-
-export default Forget;

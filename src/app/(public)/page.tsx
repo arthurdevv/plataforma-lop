@@ -1,6 +1,7 @@
 'use client';
 
 import React, { useState } from 'react';
+import Link from 'next/link';
 
 import { Conic } from '@/styles/global';
 import {
@@ -18,7 +19,7 @@ import {
   Error,
 } from './styles';
 
-const Login: React.FC = () => {
+export default function Login() {
   const [form, setForm] = useState<User>({ name: '', email: '', password: '' });
   const [error, setError] = useState<string | null>(null);
 
@@ -69,7 +70,7 @@ const Login: React.FC = () => {
                 <InputsContent>
                   <InputsLink>
                     <span>Senha</span>
-                    <a href='/forget'>Esqueceu a senha?</a>
+                    <Link href='/forget'>Esqueceu a senha?</Link>
                   </InputsLink>
                   <Input
                     type='password'
@@ -84,7 +85,7 @@ const Login: React.FC = () => {
             </form>
             <Register>
               <span>Não possui uma conta?</span>
-              <a href='/register'>Cadastre-se</a>
+              <Link href='/register'>Cadastre-se</Link>
             </Register>
           </FormInputs>
           <FormInfo>
@@ -102,5 +103,3 @@ const Login: React.FC = () => {
     </>
   );
 }
-
-export default Login;

@@ -1,6 +1,7 @@
 'use client';
 
 import { useState } from 'react';
+import Link from 'next/link';
 import { useRouter } from 'next/navigation';
 
 import { Conic } from '@/styles/global';
@@ -18,7 +19,7 @@ import {
   Error,
 } from './styles';
 
-const _Register: React.FC = () => {
+export default function _Register() {
   const [form, setForm] = useState<User>({ name: '', email: '', password: '' });
   const [error, setError] = useState<string | null>(null);
   const router = useRouter();
@@ -110,7 +111,7 @@ const _Register: React.FC = () => {
             </form>
             <Register>
               <span>Já possui uma conta?</span>
-              <a href='/'>Entrar</a>
+              <Link href='/'>Entrar</Link>
             </Register>
           </FormInputs>
         </Form>
@@ -120,5 +121,3 @@ const _Register: React.FC = () => {
     </>
   );
 }
-
-export default _Register;
