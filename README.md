@@ -33,7 +33,7 @@
 
 ## Aplicação
 
-> **NOTA: Antes de rodar localmente, veja a versão em [produção](lop-plat.vercel.app) do projeto**
+> **NOTA: Antes de rodar localmente, veja a versão em [produção](https://plataforma-lop.vercel.app/) do projeto**
 
 1. Clone o repositório
 ```sh
