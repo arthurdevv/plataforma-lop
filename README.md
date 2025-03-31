@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="https://github.com/user-attachments/assets/4c7d8d89-7db2-4911-9d61-8987125a5675" alt="Preview">
+  <img src="https://github.com/user-attachments/assets/ae7f697b-f78b-4b03-9732-7a95a300bb29" alt="Preview">
 </p>
 
 <br />
@@ -17,7 +17,7 @@
 <br />
 
 <p align="center">
-  <img src="https://github.com/user-attachments/assets/d3151ddf-5458-4c17-adcb-fa034c812f66" alt="Preview">
+  <img src="https://github.com/user-attachments/assets/f491291e-bbe6-4e65-a480-fe5b52c38721" alt="Preview">
 </p>
 
 ## Motivação
@@ -28,7 +28,7 @@
 <br />
 
 <p align="center">
-  <img src="https://github.com/user-attachments/assets/4a41156f-897f-4a3f-b18a-0ca46a4c187e" alt="Preview">
+  <img src="https://github.com/user-attachments/assets/7d374b21-f9f3-445f-84a3-867a81c3ad0a" alt="Preview">
 </p>
 
 ## Aplicação
