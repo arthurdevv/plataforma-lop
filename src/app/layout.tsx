@@ -1,5 +1,7 @@
 import type { Metadata } from 'next';
 import { Geist } from 'next/font/google';
+
+import { GitHub } from '@/styles/global';
 import StyledComponentsRegistry from './registry';
 
 const geistSans = Geist({
@@ -20,10 +22,14 @@ export default function RootLayout({
   return (
     <html lang='en'>
       <head>
-        <link rel="icon" href="/favicon.ico" sizes="any" />
+        <link rel='icon' href='/favicon.ico' sizes='any' />
       </head>
       <body className={`${geistSans.variable}`}>
         <StyledComponentsRegistry>{children}</StyledComponentsRegistry>
+        <GitHub
+          href='https://github.com/arthurdevv/plataforma-lop'
+          target='_blank'
+        />
       </body>
     </html>
   );

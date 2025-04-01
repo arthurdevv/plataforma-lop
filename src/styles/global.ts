@@ -50,6 +50,25 @@ export const Conic = styled.div`
   `} 6s ease-in-out 0s infinite normal none running;
 `;
 
+export const GitHub = styled.a`
+  position: fixed;
+  width: 1.5625rem;
+  height: 1.5625rem;
+  left: 1.25rem;
+  bottom: 1.25rem;
+  z-index: 10;
+  cursor: pointer;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-image: url(/github.svg);
+  transition: opacity 0.2s ease 0s;
+
+  &:hover {
+    opacity: 0.5;
+  }
+`;
+
 export default createGlobalStyle`
   *, *::before, *::after {
     margin: 0;
