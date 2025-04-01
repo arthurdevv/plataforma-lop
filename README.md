@@ -11,7 +11,7 @@
 ## Funcionalidades
 - Cadastro de usuários → `POST /api/register`
 - Login e autenticação → `POST /api/login`
-- Listagem de usuário cadastrados → `POST /api/users`
+- Listagem de usuário cadastrados → `GET /api/users`
 - Armazenamento dos dados do usuário
 
 <br />
